@@ -1,0 +1,7 @@
+<form method= "POST" action="/characters/<%= character.id %>/update">
+    <label>Name: <input name= "name" type="text" value="<%=character.name %>" required/></label>
+    <label>Occupation: <input name= "occupation" type="text" value="<%=character.occupation %>" required/></label>
+    <label>Weapon: <input name= "weapon" type="text" value="<%=character.weapon%>" required/></label>
+    <label>Debt: <input name= "debt" type="checkbox" checked="<%=character.debt%>"/></label>   
+    <button type="submit">Submit Changes</button>
+</form>
